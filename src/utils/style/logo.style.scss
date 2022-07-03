@@ -1,0 +1,19 @@
+.logo__wrapper{
+  position: absolute;
+  left: 5%;
+  top: -25px;
+  background-color: #1BEFC8;
+  padding: 2rem;
+  transform: skewX(-15deg) rotate(5deg) translateX(-50px) translateY(10px);
+  width: 250px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+} 
+.logo__item{
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transform: skewX(15deg) rotate(-5deg);
+}
