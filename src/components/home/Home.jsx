@@ -7,13 +7,14 @@ const Home = () => {
     <div className="home__container">
       <article className="home__top_container">
         <section className="hero__image_wrapper">
-
+          
         </section>
         <section className="hero__text_wrapper">
-          <p className="hero__text">
-            For all your resource needs...
-          </p>
-          <Link to="contact_saintdom">Contact Us</Link>
+          <h1 className="hero__text">
+            <span>For all your</span><br />
+            <span>resource needs...</span> 
+          </h1>
+          <Link className='hero__cta' to="contact_saintdom">Contact Us</Link>
         </section>
       </article>
       <article className="home__bottom_container">

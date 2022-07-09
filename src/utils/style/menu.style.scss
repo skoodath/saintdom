@@ -1,15 +1,26 @@
+@import "mixins";
 
 .navbar__main{
-  width: fit-content;
+  @include flex-box(column, center, center);
   margin: 0 auto;
   position: fixed;
   width: 100%;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
+  height: 100vh;
+  background-color: #1BEFC8;
+  top: 0;
+  right: 0;
+  display: none;
+
   @media screen and (min-width: 768px){
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: auto;
+    background-color: #fff;
+    width: 50%;
+    margin: 0 0 0 auto;
   }
 }
 .nav__items{
@@ -17,13 +28,26 @@
   letter-spacing: 1.5px;
   font-size: 1.1rem;
   width: 100%;
-  height: 100%;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
-  border-radius: 7px 7px 0 0;
   
   @media screen and (min-width: 768px) {
     font-size: 1.3rem;
+    width: auto;
+    margin: 0 0 0 1rem;
+  }
+}
+.close__btn_wrapper{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  svg{
+    font-size: 2rem;
+    color: darkgreen;
+  }
+  @media screen and (min-width: 768px){
+    display: none;
   }
 }
