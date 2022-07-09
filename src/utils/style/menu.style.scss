@@ -23,6 +23,13 @@
     margin: 0 0 0 auto;
   }
 }
+
+.show {
+  display: flex;
+}
+.hide {
+  display: none;
+}
 .nav__items{
   text-decoration: none;
   letter-spacing: 1.5px;

@@ -15,13 +15,13 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route
-            index
-            element={
-                <Home />
-            }
-            />
-              <Route path="about_saintdom" element={<About />} />
-              <Route path="contact_saintdom" element={<Contact />} />
+          index
+          element={
+              <Home />
+          }
+          />
+            <Route path="about_saintdom" element={<About />} />
+            <Route path="contact_saintdom" element={<Contact />} />
       </Route>
     </Routes>
     <Footer />
