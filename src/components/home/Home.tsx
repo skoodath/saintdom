@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/home.style.scss";
+import underwork from "../../assets/underwork.png";
 
 const container: React.CSSProperties = {
   display: "flex",
@@ -37,11 +38,7 @@ const Home = () => {
     <div style={container}>
       <h1 style={header}>saintdom services</h1>
       <div style={image_wrapper}>
-        <img
-          src="../src/assets/underwork.png"
-          alt="under works"
-          style={image}
-        />
+        <img src={underwork} alt="under works" style={image} />
       </div>
       <p style={para}>
         We will be live soon. <br />
