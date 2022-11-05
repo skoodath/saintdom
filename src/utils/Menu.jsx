@@ -8,7 +8,7 @@ const Menu = ({showMenu, handleMenu }) => {
   let menus = getMenu()
   return (
     <>
-      <nav className={showMenu ? "navbar__main show" : "navbar__main hide"}>
+      <nav className="navbar__main">
           <span className="close__btn_wrapper" onClick={handleMenu} >
             <MdClose />
           </span>

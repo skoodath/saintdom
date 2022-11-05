@@ -10,17 +10,21 @@
   width: 80%;
   height: fit-content;
   margin: 10vh auto;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
 }
 .hero__image_wrapper, .hero__text_wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 50%;
+  width: 50%;
+  margin: 0 auto;
   @media screen and (min-width: 768px) {
     height: 100%;
+  }
+}
+.hero__image_wrapper{
+  img{
+    width: 80%;
   }
 }
 .hero__text{
@@ -43,6 +47,11 @@
   text: {
     align: center;
     decoration: none;
+  }
+}
+.home__top_container{
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
   }
 }
 

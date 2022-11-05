@@ -13,4 +13,8 @@
   margin: 0 0 0 auto;
   font-size: 2rem;
   color: #11B395;
-}
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+ }

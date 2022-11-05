@@ -9,8 +9,8 @@
   background-color: #1BEFC8;
   top: 0;
   right: 0;
-  display: none;
-
+  display: flex;
+ 
   @media screen and (min-width: 768px){
     position: relative;
     display: flex;
@@ -24,12 +24,6 @@
   }
 }
 
-.show {
-  display: flex;
-}
-.hide {
-  display: none;
-}
 .nav__items{
   text-decoration: none;
   letter-spacing: 1.5px;
