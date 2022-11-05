@@ -36,7 +36,7 @@ const para: React.CSSProperties = {
 const Home = () => {
   return (
     <div style={container}>
-      <h1 style={header}>saintdom services</h1>
+      <h1 style={header}>saintdom</h1>
       <div style={image_wrapper}>
         <img src={underwork} alt="under works" style={image} />
       </div>
@@ -44,8 +44,8 @@ const Home = () => {
         We will be live soon. <br />
         <span style={{ fontSize: 32 }}>Please email us to find out more</span>
       </p>
-      <a href="email: preeti@saintdomservices.com" style={{ fontSize: 22 }}>
-        preeti@saintdomservices.com
+      <a href="email: preeti@saintdom.com" style={{ fontSize: 22 }}>
+        preeti@saintdom.com
       </a>
     </div>
   );
