@@ -1,0 +1,71 @@
+@import "./colors";
+@import "./layouts";
+
+.container {
+  flex: 1;
+  background-color: $primarybg;
+  display: flex;
+  margin: 5rem 0;
+}
+.wrapper {
+  @include layout(column);
+  flex-wrap: wrap;
+}
+.article {
+  border-bottom: 0.5px solid #3195d9;
+  background-color: $primarybg;
+  padding: 2rem;
+  position: relative;
+  svg {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 70%);
+    font-size: 2rem;
+    z-index: 2;
+    fill: #3195d9;
+  }
+  &:nth-child(1) {
+    background-color: #3195d9;
+    p {
+      margin: 0 auto;
+      color: $primarybg;
+      @media (min-width: 60rem) {
+        width: 70%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  &:nth-child(odd) {
+    @media (min-width: 60rem) {
+      svg {
+        left: 25%;
+      }
+    }
+    p {
+      margin-inline-start: auto;
+    }
+  }
+  &:nth-child(even) {
+    @media (min-width: 60rem) {
+      svg {
+        left: 75%;
+      }
+    }
+    p {
+      margin-inline-end: auto;
+    }
+  }
+  &:last-child {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.about_para {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  @media (min-width: 60rem) {
+    width: 50%;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,22 @@
+@import "./layouts";
+
+.container {
+  height: 8vh;
+  border-top: 1px solid #cbc4c4;
+  display: flex;
+}
+.wrapper {
+  @include layout(column, center, center, 0);
+  padding: 1rem 0;
+  @media (min-width: 60rem) {
+    @include layout(row, center, center, 0);
+  }
+}
+.brand {
+  flex: 1;
+  text-align: left;
+}
+.copyright {
+  flex: 1;
+  text-align: right;
+}

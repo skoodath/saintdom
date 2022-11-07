@@ -1,0 +1,14 @@
+@mixin layout(
+  $flexDirection: row,
+  $justifyContent: center,
+  $alignItems: center,
+  $gap: 10px
+) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+  width: min(80%, 75rem);
+  margin: 0 auto;
+}

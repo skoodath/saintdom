@@ -2,20 +2,25 @@ const menu = [
   {
     id: 1,
     title: "Home",
-    path: "/"
-  }, 
+    path: "/",
+  },
   {
     id: 2,
     title: "About Us",
-    path: "about_saintdom"
-  }, 
+    path: "about",
+  },
   {
     id: 3,
+    title: "Service",
+    path: "service",
+  },
+  {
+    id: 4,
     title: "Contact Us",
-    path: "contact_saintdom"
-  }
-]
+    path: "contact",
+  },
+];
 
 export const getMenu = () => {
   return menu;
-}
+};
