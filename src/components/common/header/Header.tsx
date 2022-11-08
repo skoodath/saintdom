@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../../style/header.module.scss";
 import { getMenu } from "../../../data/menu";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const menus = getMenu();
 
@@ -12,20 +12,24 @@ const Header = () => {
     <header className={styles.container}>
       <div className={styles.wrapper}>
         <nav className={styles.logo}>Saintdom</nav>
-        <nav className={styles.navbar}>
+        <nav
+          className={
+            showMenu ? `${styles.navbar} ${styles.show}` : styles.navbar
+          }
+        >
           {menus.map((menu) => (
-            <div key={menu.id} className={styles.navbar_items}>
-              <NavLink
-                to={menu.path}
-                className={({ isActive }) =>
-                  isActive
-                    ? `${styles.navbar_items} ${styles.active}`
-                    : styles.navbar_items
-                }
-              >
-                {menu.title}
-              </NavLink>
-            </div>
+            <NavLink
+              key={menu.id}
+              to={menu.path}
+              className={({ isActive }) =>
+                isActive
+                  ? `${styles.navbar_items} ${styles.active}`
+                  : styles.navbar_items
+              }
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              {menu.title}
+            </NavLink>
           ))}
         </nav>
         <nav

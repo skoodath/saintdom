@@ -14,12 +14,28 @@
   flex: 1;
 }
 .navbar {
-  flex: 3;
-  @include layout(row, flex-end, center, 30px);
+  @include layout(column, flex-start, center, 30px);
+  width: 100vw;
+  height: 100vh;
+  background-color: $primarybg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 10rem 0 0;
+  margin: 0;
   display: none;
   @media (min-width: 60rem) {
-    display: flex;
+    @include layout(row, flex-end, center, 30px);
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0;
   }
+}
+.show {
+  display: flex;
 }
 .navbar_items {
   text-transform: capitalize;
@@ -27,6 +43,9 @@
   font-weight: 500;
   border: 2px solid transparent;
   position: relative;
+  text-decoration: none;
+  color: $textprimary;
+  letter-spacing: 1.2px;
   &::after {
     content: "";
     position: absolute;
@@ -37,20 +56,17 @@
     bottom: -60%;
     transform: translateX(-50%);
   }
-
-  a {
-    text-decoration: none;
-    color: $textprimary;
-    letter-spacing: 1.2px;
-  }
-}
-.active {
   &:hover {
     &::after {
       width: 3rem;
       transform-origin: center;
       transition: width 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
+  }
+}
+.active {
+  &::after {
+    width: 3rem;
   }
 }
 
