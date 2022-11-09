@@ -1,0 +1,9 @@
+@import "../../sharedstyles/layouts";
+@import "../../sharedstyles/colors";
+
+.container {
+  flex: 1;
+}
+.wrapper {
+  @include layout;
+}

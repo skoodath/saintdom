@@ -1,7 +1,7 @@
-import styles from "./components/style/app.module.scss";
-import Footer from "./components/common/footer/Footer";
+import styles from "./sharedstyles/app.module.scss";
+import Header from "./common/header/Header";
+import Footer from "./common/footer/Footer";
 import { Outlet } from "react-router-dom";
-import Header from "./components/common/header/Header";
 
 const App = () => {
   return (

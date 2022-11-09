@@ -9,16 +9,6 @@ const menu = [
     title: "About Us",
     path: "about",
   },
-  {
-    id: 3,
-    title: "Service",
-    path: "service",
-  },
-  {
-    id: 4,
-    title: "Contact Us",
-    path: "contact",
-  },
 ];
 
 export const getMenu = () => {

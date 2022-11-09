@@ -1,5 +1,5 @@
-import styles from "../style/about.module.scss";
 import { AiFillCaretDown } from "react-icons/ai";
+import styles from "../styles/about.module.scss";
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
           <article className={`${styles.article} ${styles.article_three}`}>
             <p className={styles.about_para}>
               We hold rich experience as an Inside Sales and in Business
-              Development across IT and Non – IT industries in the US. Efficient
+              Development across IT and Non-IT industries in the US. Efficient
               hands on with the Offshore search model for the USA, UK & Asia
               Offshore clients.
             </p>

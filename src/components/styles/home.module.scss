@@ -1,6 +1,5 @@
-@import "../../utils/style/mixins";
-@import "./layouts";
-@import "./colors";
+@import "../../sharedstyles/layouts";
+@import "../../sharedstyles/colors";
 
 .container {
   flex: 1;
@@ -60,27 +59,26 @@
   font-size: clamp(2rem, 12vw, 4rem);
   width: min(80%, 55rem);
   text-align: center;
-  margin-block-end: 2rem;
+  margin-block-end: 1rem;
+  span {
+    color: $spotlight;
+  }
 }
 
 .cta {
-  background-color: $spotlight;
-  color: #fff;
-  padding: 0.8rem 2rem;
-  cursor: pointer;
-  border-radius: 50px;
-  letter-spacing: 2px;
-  filter: drop-shadow(0 2px 2px rgba(9, 101, 92, 0.639));
-  font: {
-    size: 1.2rem;
-    weight: 700;
-  }
-  text: {
-    align: center;
-    decoration: none;
-    transform: uppercase;
-  }
-  &:hover {
-    background-image: linear-gradient(rgb(0 0 0 / 0.05), rgb(0 0 0 / 0.15));
+  text-decoration: none;
+  svg {
+    cursor: pointer;
+    fill: $buttoncolor;
+    stroke: #fff;
+    margin: 0.5rem;
+    font: {
+      size: 2.5rem;
+      weight: 700;
+    }
+
+    &:hover {
+      fill: $buttoncolorlite;
+    }
   }
 }

@@ -1,5 +1,5 @@
-@import "./colors";
-@import "./layouts";
+@import "../../sharedstyles/colors";
+@import "../../sharedstyles/layouts";
 
 .container {
   width: 100vw;
@@ -46,6 +46,7 @@
   text-decoration: none;
   color: $textprimary;
   letter-spacing: 1.2px;
+  user-select: none;
   &::after {
     content: "";
     position: absolute;
