@@ -8,7 +8,7 @@ const Home = () => {
         <h1 className={styles.value}>
           Helping businesses <span>grow</span>
         </h1>
-        <div>
+        <div className={styles.cta_wrapper}>
           <a
             href="https://www.linkedin.com/in/preeti-punjabi-b4404813/"
             className={styles.cta}

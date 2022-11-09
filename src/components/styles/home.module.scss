@@ -64,21 +64,30 @@
     color: $spotlight;
   }
 }
+.cta_wrapper {
+  display: flex;
+  gap: 10px;
+}
 
 .cta {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: $buttoncolorlite;
+  border-radius: 50%;
+  &:hover {
+    background-color: $buttoncolor;
+  }
   svg {
     cursor: pointer;
-    fill: $buttoncolor;
-    stroke: #fff;
+    fill: #fff;
     margin: 0.5rem;
     font: {
-      size: 2.5rem;
+      size: 1.8rem;
       weight: 700;
-    }
-
-    &:hover {
-      fill: $buttoncolorlite;
     }
   }
 }
