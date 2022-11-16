@@ -15,7 +15,7 @@ const Home = () => {
           >
             <FaLinkedinIn />
           </a>
-          <a href="mail:preeti@saintdom.in" className={styles.cta}>
+          <a href="mailto:preeti@saintdom.in" className={styles.cta}>
             <FaEnvelope />
           </a>
         </div>
